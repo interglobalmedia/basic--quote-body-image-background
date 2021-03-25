@@ -385,10 +385,10 @@ I wanted to keep with the base font size set against the font-size property valu
 <section class="section">
 	<h2 class="sentence">Related Resources</h2>
 
-+ [CSS background-image Property](https://www.w3schools.com/cssref/pr_background-image.asp)
++ [CSS background-image Property: w3schools](https://www.w3schools.com/cssref/pr_background-image.asp)
 
-+ [Creating a Basic Background Image Using CSS (and JS)](https://github.com/interglobalmedia/basic-quote-image-background/blob/master/basic-quote-image-background.md)
++ [Creating a Basic Background Image Using CSS (and JS): Maria D. Campbell](https://github.com/interglobalmedia/basic-quote-image-background/blob/master/basic-quote-image-background.md)
 
-+ [Images and their backgrounds in HTML5](https://github.com/interglobalmedia/image-backgrounds-rel-abs-paths/blob/master/image-backgrounds-rel-abs-paths.md)
++ [Images and their backgrounds in HTML5: Maria D. Campbell](https://github.com/interglobalmedia/image-backgrounds-rel-abs-paths/blob/master/image-backgrounds-rel-abs-paths.md)
 
 </section>
