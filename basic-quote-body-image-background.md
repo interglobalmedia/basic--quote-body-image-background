@@ -129,7 +129,7 @@ const quoteContainer = document.querySelector('.quote-container');
 const articleHeading = document.querySelector('h2');
 ```
 
-By default, this h2 element inside the article element with the class of oud" in the HTML markup looks like the following:
+By ***default***, this `h2 element` inside the `article element` with the class of `"quote-cloud"` in the `HTML markup` **looks like** the ***following***:
 
 ```html5
 <h2>Click for quote!</h2>
@@ -144,7 +144,7 @@ But we **want** to ***remove*** that `element` and its `text content` and **repl
 <section class="section">
 	<h2 class="sentence">Setting the articleHeading fontWeight to normal using JavaScript</h2>
 
-***Next***, I **wanted** to **set** the `articleHeading` (`h2 element` **inside** the `article element` with the **class** of `.quote-cloud`) to the `fontWeight` of `normal`. i do this because I ***don't want*** the `text content` of the `h2 element` to ***appear*** `thick` and `heavy`. I **want** it to **appear** `normal`, so I **add** the ***following*** right below the `declaration` and `initialization` of the `articleHeading variable`:
+***Next***, I **wanted** to **set** the `articleHeading` (`h2 element` **inside** the `article element` with the **class** of `.quote-cloud`) to the `fontWeight` of `normal`. I do this because I ***don't want*** the `text content` of the `h2 element` to ***appear*** `thick` and `heavy`. I **want** it to **appear** `normal`, so I **add** the ***following*** right below the `declaration` and `initialization` of the `articleHeading variable`:
 
 ```javascript
 articleHeading.style.fontWeight = `normal`
@@ -183,7 +183,7 @@ quoteContainer.addEventListener('click', () => {
 })
 ```
 
-By **setting** the `.addEventListener()` **method** on the `quoteContainer`, I ***attach*** a `click` **event handler** to the `quoteContainer`. The `name` of the `event` is `click`, and the `event handler` is the `anonymous function` **represented** by `() => {}`. ***Inside*** the `event handler` is the `code` which is `"executed"` when the `user` ***clicks*** on the `quoteContainer`.
+By **setting** the `.addEventListener()` **method** on the `quoteContainer`, I ***attach*** a `click` **event handler** to the `quoteContainer`. The `name` of the `event` is `click`, and the `event handler` is the `arrow function` **represented** by `() => {}`. ***Inside*** the `event handler` is the `code` which is `"executed"` when the `user` ***clicks*** on the `quoteContainer`.
 
 **Inside** the `.addEventListener()` **method**, ***first*** I `declare` and `initialize` a `const variable` called `blockQuote`. I ***assign*** it the **value** of `document.querySelector('blockquote')` to ***access*** the `HTML element` in the `HTML markup` with the `name` of `blockquote`.
 
@@ -309,7 +309,11 @@ blockquote {
 
 /* media query for the Microsoft Lumia 550 with the width of 640px
 and the height of 360px */
-@media (max-width: 640px) and (max-height: 360px) {
+@media (width: 640px) and (height: 360px) {
+
+	.quote-container {
+		height: 20vh;
+	}
     h2, blockquote {
         font-size: 1.5em;
 	}
@@ -368,10 +372,14 @@ blockquote {
 
 /* media query for the Microsoft Lumia 550 with the width of 640px
 and the height of 360px */
-@media (max-width: 640px) and (max-height: 360px) {
+@media (width: 640px) and (height: 360px) {
+
+	.quote-container {
+		height: 20vh;
+	}
     h2, blockquote {
         font-size: 1.5em;
-    }
+	}
 }
 /* end .quote-container and .quote-cloud related styling */
 ```
